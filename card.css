@@ -1,0 +1,51 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 170px; /* عرض ثابت */
+  /* ارتفاع ثابت */
+  flex-shrink: 0; /* منع التصغير */
+ 
+  border-radius: 10px;
+  padding: 3px 1px;
+  border-radius: 10px;
+ background-color: rgb(92, 89, 85);
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.img {
+  background-color: whitesmoke;
+}
+
+.book-img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+
+
+  transition: transform 0.3s ease-in-out;
+  /* تأثير عند التحويل */
+
+  object-position: center;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* تكبير بسيط عند تمرير الفأرة */
+}
+.card h4 ,p{
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.df{
+  border: 1px solid rgb(160, 153, 153);
+  border-radius: 20px;
+  padding: 7px;
+}

@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    height: 200vh;
+}
+::-webkit-scrollbar{
+    width: 0px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(97, 95, 95, 0.747);
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: #000;
+    letter-spacing: 2;
+}
+
+.h {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+
+}
+
+/*the nav bar css star alg  */
+nav {
+    width: 100%;
+    padding: 3px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color:rgba(6, 150, 102, 0.877);
+
+
+}
+
+.logo {
+    width: fit-content;
+
+}
+
+.logo h2 {
+    font-size: 35px;
+    font-weight: 00;
+    font-family: "Great Vibes", cursive;
+    text-transform: capitalize;
+
+
+}
+
+span {
+    color: rgba(34, 255, 34, 0.986);
+
+
+}
+
+
+
+/*اعود بالله من الشيطان الرجيم*/
+/*links*/
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.links .thesection {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thesection a {
+    padding: 3px 20px;
+
+    border-radius: 25px;
+
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/*part السيكشن الجانبي*/
+.part {
+    float: inline-end;
+    background-color: rgb(207, 200, 200);
+    z-index: 999;
+    position: fixed;
+    top: 55px;
+    right: 8px;
+    width: 300px;
+    height: 90vh;
+    border-radius: 10px;
+    padding: 30px 5px;
+    color: #000;
+
+}
+
+.part .top {
+    text-align: center;
+    font-family: "Changa", sans-serif;
+    font-size: 25px;
+
+
+}
+
+.part .body {
+    margin-top: 30px;
+
+}
+
+.part h3 {
+    font-family: "Changa", sans-serif;
+    margin-bottom: 5px;
+}
+
+.part ul {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+
+.dz {
+    background-color: grey;
+    border-radius: 8px;
+    text-align: end;
+
+}
+
+.part ul li {
+    padding: 10px;
+    font-family: "Changa", sans-serif;
+}
+
+.part ul li:hover {
+    background-color: rgb(77, 75, 75);
+
+}
+
+.part ul li:hover:last-child,
+.part .dz li:hover:first-child {
+    background-color: rgb(77, 75, 75);
+    border-radius: 8px;
+}
+
+.part .dz li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.fpt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    gap: 20px;
+}
+
+.fpt a {
+font-family: sans-serif;   
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.fpt a:hover {
+    
+        color: rgba(0, 0, 0, 0.747);
+    }
+
+    /* icons */
+ .icon {
+    width: auto;
+    border-radius: 25px;
+    padding: 3px;
+ }   
+ .icon i{
+    font-size: 19px;
+    transition: 0.5s ease-in-out;
+
+ }
+ .icon i:hover{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+ }
+ 
+ 
+ /*finch the work at 02:05    رمضان 24  */
