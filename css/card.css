@@ -9,6 +9,7 @@
   padding: 3px 1px;
   border-radius: 10px;
  background-color: rgb(92, 89, 85);
+ padding: 3px;
 
 }
 
@@ -22,6 +23,8 @@
 
 .img {
   background-color: whitesmoke;
+  padding: 7px;
+    border-radius: 7px;
 }
 
 .book-img {
@@ -29,21 +32,23 @@
   object-fit: contain;
 
 
-  transition: transform 0.3s ease-in-out;
-  /* تأثير عند التحويل */
-
   object-position: center;
 
 }
 
 .card:hover {
   transform: scale(1.05);
-  /* تكبير بسيط عند تمرير الفأرة */
+ 
 }
-.card h4 ,p{
+.card p{
   font-family: "Vazirmatn", sans-serif;
+  color: rgb(192, 186, 186);
 }
-
+.card h4 {
+  font-family: "Vazirmatn", sans-serif;
+ font-weight: 700;
+ color: rgb(255, 255, 255);
+}
 .df{
   border: 1px solid rgb(160, 153, 153);
   border-radius: 20px;

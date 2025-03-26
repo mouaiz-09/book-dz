@@ -1,0 +1,18 @@
+.lan-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    text-align: center;
+   
+}
+
+.lan-2 .a {
+    font-family: "Vazirmatn", sans-serif;
+
+    padding: 30px;
+    border-radius: 25px;
+
+}
