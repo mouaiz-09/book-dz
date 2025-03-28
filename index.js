@@ -3,6 +3,8 @@ const btn_nav = document.getElementById('btn-01');
 const section_nav = document.getElementById('part');
 const hestory_section = document.getElementById('hestory_section')
 
+
+
 btn_nav.onclick = () => {
   section_nav.classList.toggle('h')
 
@@ -113,8 +115,7 @@ var data =
       "title": "الشيخ والبحر",
       "author": "إرنست همنغواي",
       "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/The_Old_Man_and_the_Sea.jpg/220px-The_Old_Man_and_the_Sea.jpg"
-    }
-  ]
+    }]
 
 
 
@@ -122,9 +123,9 @@ var data =
 let dz = ["maouz", "dzdzd"]
 
 for (let i = 0; i < data.length; i++) {
-  console.log(data[i].title);
 
- // amke a card 
+
+  // amke a card 
   const card = document.createElement('div')
   card.classList.add('card')
   const box_img = document.createElement('div')

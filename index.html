@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/land-card.css">
+    <link rel="stylesheet" href="book-category.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- الخطوط العربية من جوجل -->
 
@@ -41,7 +42,8 @@
 </head>
 
 <body style="background-color: rgb(4, 185, 125); color: #ffffff;">
-    <nav>
+    <!--heder  شريط العلوي-->
+    <nav style="z-index: 1000;">
         <a href="index.html">
 
             <div class="logo">
@@ -50,12 +52,15 @@
         </a>
         <div class="links">
             <div class="thesection">
-                <a href="#">الكتب</a>
+                <a href="book.html">الكتب</a>
                 <a href="#">الروايات</a>
                 <a href="#">المقالات</a>
             </div>
             <div class="icon">
-                <i class="fa-solid fa-house" id="btn-01"></i>
+
+                <i class="fa-solid fa-house" id="btn-01">
+                    dzdz
+                </i>
             </div>
             <div class="part h " id="part">
                 <div class="top ">
@@ -70,7 +75,11 @@
                     <div class="dz">
 
                         <ul>
-                            <li> <a href="#">الكتب</a></li>
+
+                            <li>
+                                <a href="#">الكتب</a>
+
+                            </li>
                             <li> <a href="#">الروايات</a></li>
                             <li> <a href="#">المقالات</a></li>
                         </ul>
@@ -101,7 +110,8 @@
         </div>
 
     </nav>
-    <section class="land " >
+    <!--الواجهة الرئيسة -->
+    <section class="land  ">
         <div class="logo">
             <h4>
                 Book-dz
@@ -113,7 +123,8 @@
         </div>
 
     </section>
-    <section class="lan-2 " >
+    <!-- مميزات الموقع -->
+    <section class="lan-2  " style="z-index: 1 !important;">
         <div class="a">
             <div class="bok-img">
                 <img src="https://cdn-icons-png.flaticon.com/128/3771/3771417.png" alt="book-icon" srcset="">
@@ -134,7 +145,9 @@
         </div>
 
     </section>
-    <section class="book  " id="book_section">
+    |<!--اخر الكتب العربية-->
+    <section class="book   " style="z-index: 1 !important;" id="book_section">
+
         <div class="top">
             <h3 dir="rtl">
                 <li>
@@ -603,10 +616,63 @@
                 </div>
             </div>
         </div>
-    </section>
-  
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="moor">
 
-    <section class="book "  id="hestory">
+                <p>
+                    المزييد……
+                </p>
+
+            </div>
+        </a>
+    </section>
+    <!--انواع الكتب-->
+    <section class="categ" style="z-index: 1 !important;">
+        <div class="top">
+            <h3 dir="rtl">
+                <li>
+                    تصنيفات الكتب
+                </li>
+            </h3>
+        </div>
+        <div class="bodyy">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div class="ca">
+                    <h3>كتب علم نفس</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <h3>كتب دينية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <h3>كتيب فلسفية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <h3>كتب علمية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <h3>كتب تاريخية</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!--اخر الروايات-->
+    <section class="book  " style="z-index: 1 !important;" id="hestory">
+
         <div class="top">
             <h3 dir="rtl">
                 <li>
@@ -642,8 +708,18 @@
                 </div>
             </div>
         </div>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <div class="moor">
+
+                <p>
+                    المزييد……
+                </p>
+
+            </div>
+        </a>
     </section>
-    <div class="ds">
+
+    <div class="ds " style="z-index: 1 !important;">
 
         <section class="sh">
             <div class="top">
@@ -652,19 +728,28 @@
                 </h3>
             </div>
             <div class="bd">
-                <div class="s">
-                   <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="" srcset="">
-    
-                    <p>facebook</p>
-                </div>
-                <div class="s">
-                    <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"  alt="">
-                    <p>instgram</p>
-                </div>
-                <div class="s">
-                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" srcset="">
-                    <p>twter</p>
-                </div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+
+                    <div class="s">
+                        <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="" srcset="">
+
+                        <p>facebook</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+
+                    <div class="s">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="">
+                        <p>instgram</p>
+                    </div>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+
+                    <div class="s">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" srcset="">
+                        <p>twter</p>
+                    </div>
+                </a>
             </div>
         </section>
     </div>

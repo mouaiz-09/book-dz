@@ -52,8 +52,8 @@
     width: 100%;
     background-color: rgb(37, 39, 37);
     margin-top: 50px;
-
     padding: 30px;
+    position: relative;
 }
 
 .book .top {
@@ -135,7 +135,7 @@
     background-color: rgb(4, 185, 125);
     color: black;
     font-size: 20px;
-    padding:25px;
+    padding: 25px;
     border-radius: 25px;
     text-align: center;
     transition: 0.6s;
@@ -154,4 +154,21 @@
 .s:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-  }
+}
+
+.moor {
+    position: absolute;
+   top: 90px;
+    right: 50px;
+    background-color: rgba(105, 103, 100, 0.596);
+  
+    padding: 5px 20px;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.moor:hover {
+    opacity: 1.5;
+    transform: scale(1.05);
+    background-color: rgb(138, 126, 126);
+}
