@@ -70,14 +70,15 @@
     background-color: rgb(78, 75, 75);
     border-radius: 25px;
 }
-.comntar{
+
+.comntar {
     margin-top: 5px;
 }
 
 .con .i {
     padding: 10px;
     width: 100%;
- 
+
     margin-bottom: 5px;
     display: flex;
     justify-content: end;
@@ -138,7 +139,7 @@
 }
 
 .red {
-    background-color: rgb(211, 52, 24) !important;
+    background-color: red !important;
 }
 
 .d div:hover {
@@ -153,8 +154,8 @@
 }
 
 .de {
-  
- position: relative;
+
+    position: relative;
 }
 
 .ds input {
@@ -185,7 +186,126 @@
 
     transition: 0.5s ease-in-out;
 }
-.de button:hover{
+
+.de button:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.bt_m {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.bt_m .btn {
+    background-color: red;
+    padding: 17px;
+    border-radius: 15px;
+    font-family: "Changa", sans-serif;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    color: whitesmoke !important;
+}
+
+.sher {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(24, 22, 22, 0.61);
+    position: fixed;
+    top: 0;
+    z-index: 1000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+    font-family: "Changa", sans-serif;
+
+}
+
+.contr {
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: rgb(36, 35, 35);
+    padding: 18px;
+    text-align: center;
+    color: whitesmoke !important;
+}
+
+.contr .tp {
+    padding: 5px;
+}
+
+.tp p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.tp p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.bs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+margin-top: 10px;
+}
+
+.cen {
+    width: 100%;
+}
+
+.cen input {
+    width: 80%;
+    height: 35px;
+    background-color: aliceblue !important;
+    border: none;
+    color: black !important;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.bs p {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.bs p::before {
+    content: '!!!';
+    font-size: larger;
+    color: red;
+    font-weight: 900;
+
+}
+
+.non {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    border-radius: 50%;
+    opacity: 0.7;
+
+}
+
+.non:hover {
+    opacity: 1;
 }
