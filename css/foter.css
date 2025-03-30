@@ -94,6 +94,8 @@ footer li:hover {
     transform: scale(1.05);
     text-indent: -3px;
     text-transform: capitalize;
+  list-style: circle;
+ 
 }
 
 /*جزي المطورين والمصمم*/
@@ -128,6 +130,7 @@ footer li:hover {
     letter-spacing: 1.5px;
     color: rgb(219, 192, 192);
     margin-left: 3px;
+
 }
 
 

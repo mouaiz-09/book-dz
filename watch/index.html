@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book-dz</title>
-    <!-- css file local -->
-    <link rel="stylesheet" href="./css/home-page.css">
-    <link rel="stylesheet" href="./css/card.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/land-card.css">
-    <link rel="stylesheet" href="./css/book-category.css">
-    <link rel="stylesheet" href="./css/foter.css">
+    <title> كتاب|book-dz</title>
+    <!-- css file العامة -->
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/home-page.css">
+
+    <link rel="stylesheet" href="/css/book-category.css">
+    <link rel="stylesheet" href="/css/foter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--css file خاصة watch-->
+    <link rel="stylesheet" href="/watch/css_wath/cont.css">
+
+
     <!--icon -->
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/207/207114.png" type="image/x-icon">
     <!-- الخطوط العربية من جوجل -->
@@ -44,9 +48,8 @@
 </head>
 
 <body style="background-color: rgb(4, 185, 125); color: #ffffff;">
-    <!--heder  شريط العلوي-->
     <nav style="z-index: 1000;">
-        <a href="index.html">
+        <a href="/index.html">
 
             <div class="logo">
                 <h2>book <span>-</span> dz</h2>
@@ -54,9 +57,9 @@
         </a>
         <div class="links">
             <div class="thesection">
-                <a href="index.html" class="hover"> الرئيسة</a>
-                <a href="./category/book.html">الكتب</a>
-                <a href="./category/hst.html">الروايات</a>
+                <a href="/index.html"> الرئيسة</a>
+                <a href="/category/book.html">الكتب</a>
+                <a href="/category/hst.html">الروايات</a>
 
             </div>
             <div class="icon">
@@ -80,10 +83,10 @@
                         <ul>
 
                             <li>
-                                <a href="./category/book.html">الكتب</a>
+                                <a href="book.html">الكتب</a>
 
                             </li>
-                            <li> <a href="./category/hst.html">الروايات</a></li>
+                            <li> <a href="hst.html">الروايات</a></li>
 
                         </ul>
                     </div>
@@ -98,8 +101,8 @@
                     <div class="dz">
 
                         <ul>
-                            <li> <a href="#book_section">احدث الكتب</a></li>
-                            <li> <a href="#hestory">احدث الروايات</a></li>
+                            <li> <a href="/index.html#book_section">احدث الكتب</a></li>
+                            <li> <a href="/index.html#hestory">احدث الروايات</a></li>
 
                         </ul>
                     </div>
@@ -113,48 +116,131 @@
         </div>
 
     </nav>
-    <!--الواجهة الرئيسة -->
-    <section class="land   ">
-        <div class="logo">
-            <h4>
-                Book-dz
-            </h4>
-            <p>منصة جزائرية رائدة لمشاركة الكتب وتحميلها ومكان مخصص لمحبي المطالعة</p>
-            <div class="bt">
-                <span style="color: whitesmoke;">2025</span>
+    
+    <!--عرض  الكتاب-->
+    <div class="cont">
+        <div class="imgdz">
+            <div class="img-box">
+                <img class="books-img" src="/img/img.jpg" style="width: 100%;" alt="غلاف الكتاب" srcset="">
+            </div>
+            <h3>
+                book-dz
+            </h3>
+        </div>
+        <div class="boox_info">
+
+            <div class="top">
+                <h3>
+                    <li>
+                        معلومات الكتاب 
+                    </li>
+                </h3>
+            </div>
+            <div class="con ">
+                <div class="i">
+                    <h3>الاسم</h3>
+                    <h3>العدات الدرية</h3>
+                </div>
+                <div class="i">
+                    <h3>المؤلف</h3>
+                    <h3>جيمس كلير</h3>
+                </div>
+                <div class="i">
+                    <h3>التقيم</h3>
+                    <h3>•••</h3>
+                </div>
+                <div class="i d">
+                    <div class="don">
+                        التنزيل
+                    </div>
+                    <div class="red">
+                        قراءة
+                    </div>
+                </div>
+
+            </div>
+            <div class="comntar">
+                <div class="top">
+                    <h3>
+                        <li>
+
+                            اضافة تعليق 
+                        </li>
+                    </h3>
+                    <div class="ds">
+                        <input type="text">
+                        <div class="de">
+                            <button type="submit">submit</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
-    </section>
-    <!-- مميزات الموقع -->
-    <section class="lan-2  " style="z-index: 1 !important;">
-        <div class="a">
-            <div class="bok-img">
-                <img src="https://cdn-icons-png.flaticon.com/128/3771/3771417.png" alt="book-icon" srcset="">
-            </div>
-            <h3>اكثر من 1000 كتاب على المنصفة مجانا</h3>
-        </div>
-        <div class="a">
-            <div class="bok-img">
-                <img src="https://cdn-icons-png.flaticon.com/128/9496/9496432.png" alt="book-icon" srcset="">
-            </div>
-            <h3>تحميل مجاني لكل الكتب </h3>
-        </div>
-        <div class="a">
-            <div class="bok-img">
-                <img src="https://cdn-icons-png.flaticon.com/128/3200/3200644.png" alt="book-icon" srcset="">
-            </div>
-            <h3>بامكانك نشر مقالاتك ومناقشة افكارك مع غيرك</h3>
-        </div>
+    </div>
 
-    </section>
-    |<!--اخر الكتب العربية-->
+ <!--انواع الكتب-->
+ <section class="categ " style="z-index: 1 !important;">
+    <div class="top">
+        <h3 dir="rtl">
+            <li>
+                تصنيفات الكتب
+            </li>
+        </h3>
+    </div>
+    <div class="bodyy">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+
+            <div class="ca">
+                <img src="https://cdn-icons-png.flaticon.com/128/2013/2013182.png"
+                    style="width: 30%; margin-right: 3px;" alt="" srcset="">
+                <h3>كتب علم نفس</h3>
+            </div>
+        </a>
+        <a href="#">
+
+            <div class="ca">
+                <img src="https://cdn-icons-png.flaticon.com/128/2918/2918211.png"
+                    style="width: 30%; margin-right: 3px;" alt="" srcset="">
+                <h3>كتب دينية</h3>
+            </div>
+        </a>
+        <a href="#">
+
+            <div class="ca">
+                <img src="https://cdn-icons-png.flaticon.com/128/18253/18253904.png" style="width: 30%;" alt=""
+                    srcset="">
+                <h3>كتب فلسفية</h3>
+            </div>
+        </a>
+        <a href="#">
+
+            <div class="ca">
+                <img src="https://cdn-icons-png.flaticon.com/128/2134/2134325.png"
+                    style="width: 30%;margin-right: 3px; " alt="" srcset="">
+                <h3>كتب علمية</h3>
+            </div>
+        </a>
+        <a href="#">
+
+            <div class="ca">
+                <img src="https://cdn-icons-png.flaticon.com/128/14963/14963461.png" style="width: 30%" alt=""
+                    srcset="">
+                <h3>كتب تاريخية</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+ <!--مقترحات-->
     <section class="book   " style="z-index: 1 !important;" id="book_section">
 
         <div class="top">
             <h3 dir="rtl">
                 <li>
-                    اخر الكتب
+                  مقترحات لك
                 </li>
             </h3>
         </div>
@@ -622,7 +708,7 @@
                 </div>
             </div>
         </div>
-        <a href="./category/book.html" rel="noopener noreferrer">
+        <a href="/category/book.html" rel="noopener noreferrer">
             <div class="moor">
 
                 <p>
@@ -633,90 +719,8 @@
             </div>
         </a>
     </section>
-    <!--انواع الكتب-->
-    <section class="categ " style="z-index: 1 !important;">
-        <div class="top">
-            <h3 dir="rtl">
-                <li>
-                    تصنيفات الكتب
-                </li>
-            </h3>
-        </div>
-        <div class="bodyy">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-
-                <div class="ca">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2013/2013182.png"
-                        style="width: 30%; margin-right: 3px;" alt="" srcset="">
-                    <h3>كتب علم نفس</h3>
-                </div>
-            </a>
-            <a href="#">
-
-                <div class="ca">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2918/2918211.png"
-                        style="width: 30%; margin-right: 3px;" alt="" srcset="">
-                    <h3>كتب دينية</h3>
-                </div>
-            </a>
-            <a href="#">
-
-                <div class="ca">
-                    <img src="https://cdn-icons-png.flaticon.com/128/18253/18253904.png" style="width: 30%;" alt=""
-                        srcset="">
-                    <h3>كتب فلسفية</h3>
-                </div>
-            </a>
-            <a href="#">
-
-                <div class="ca">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2134/2134325.png"
-                        style="width: 30%;margin-right: 3px; " alt="" srcset="">
-                    <h3>كتب علمية</h3>
-                </div>
-            </a>
-            <a href="#">
-
-                <div class="ca">
-                    <img src="https://cdn-icons-png.flaticon.com/128/14963/14963461.png" style="width: 30%" alt=""
-                        srcset="">
-                    <h3>كتب تاريخية</h3>
-                </div>
-            </a>
-        </div>
-    </section>
-
-
-    <!--اخر الروايات-->
-    <section class="book  " style="z-index: 1 !important;" id="hestory">
-
-        <div class="top">
-            <h3 dir="rtl">
-                <li>
-                    اخر الروايات
-                </li>
-            </h3>
-        </div>
-        <div class="df">
-
-            <div class="bd" id="hestory_section">
-         
-               
-            </div>
-        </div>
-        <a href="./category/hst.html" rel="noopener noreferrer">
-            <div class="moor">
-
-                <p>
-                    المزييد
-                    <i class="fa-solid fa-angles-right"></i>
-                </p>
-
-            </div>
-        </a>
-    </section>
-    <!--حسابات مواقع التواصل-->
-    <div class="ds " style="z-index: 1 !important;">
+     <!--حسابات مواقع التواصل-->
+     <div class="ds " style="z-index: 1 !important;">
 
         <section class="sh">
             <div class="top">
@@ -751,17 +755,13 @@
         </section>
     </div>
 
-
-
-
-    <script src="index.js"></script>
 </body>
 <!-- **خاتمة الموقع **معلومات -->
-<footer>
+<footer style="margin-top: 300px;">
     <div class="count">
         <div class="top">
             <h3>book-dz</h3>
-         <p>وقل ربي زدني علما</p>
+            <p>وقل ربي زدني علما</p>
         </div>
         <div class="bod">
             <div class="call">
@@ -815,28 +815,28 @@
         <div class="info">
             <div class="d1">
                 <h3>the devloper:</h4>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
 
-                    <h4>mouaiz</h4>
-                </a>
+                        <h4>mouaiz</h4>
+                    </a>
 
             </div>
             <div class="d3">
                 <h3>2025</h4>
-              
+
 
             </div>
             <div class="d2">
                 <h3>the desinger:</h4>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
 
-                    <h4>mouaiz</h4>
-                </a>
+                        <h4>mouaiz</h4>
+                    </a>
 
             </div>
         </div>
-      
+
     </div>
 </footer>
-
+ <script src="main.js"></script>
 </html>

@@ -123,15 +123,17 @@ var data =
 let dz = ["maouz", "dzdzd"]
 
 for (let i = 0; i < data.length; i++) {
-
+let id = i ;
 
   // amke a card 
+  const link = document.createElement('a');
+  link.href = `/watch/index.html?id=`+i;
   const card = document.createElement('div')
   card.classList.add('card')
   const box_img = document.createElement('div')
   box_img.classList.add('img')
   const img = document.createElement('img')
-  img.src = data[i].cover
+  img.src = "/img/img.jpg"
   img.style = 'width: 100%'
   img.classList.add('book-img')
 
@@ -150,7 +152,9 @@ for (let i = 0; i < data.length; i++) {
   desc.appendChild(author)
   card.appendChild(box_img)
   card.appendChild(desc)
-  hestory_section.appendChild(card)
+  link.appendChild(card)
+
+  hestory_section.appendChild(link)
 
 }
 

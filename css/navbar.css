@@ -24,7 +24,7 @@ a {
     transition: 0.5s;
 }
 
-ul {
+ nav ul {
     list-style: none;
 }
 
@@ -228,3 +228,4 @@ nav  a:hover {
     padding: 0px  10px;
     background-color: #ffffff;
  }
+
