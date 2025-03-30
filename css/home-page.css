@@ -35,7 +35,7 @@
 .logo p {
     font-family: "Vazirmatn", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 27px;
 }
 
 .logo .bt {
@@ -158,7 +158,7 @@
 
 .moor {
     position: absolute;
-   top: 100px;
+   top: 120px;
     right: 50px;
     background-color: rgba(105, 103, 100, 0.596);
   
