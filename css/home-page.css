@@ -158,9 +158,9 @@
 
 .moor {
     position: absolute;
-   top: 120px;
-    right: 50px;
-    background-color: rgba(105, 103, 100, 0.596);
+    top: 220px;
+    right: 41px;
+    background-color: rgb(0, 0, 0);
   
     padding: 5px 20px;
     border-radius: 25px;
@@ -170,7 +170,8 @@
 .moor:hover {
     opacity: 1.5;
     transform: scale(1.05);
-    background-color: rgb(138, 126, 126);
+    background-color: rgba(0, 0, 0, 0.87);
+    color:whitesmoke !important;
 }
 .bodyy a:hover{
     color: rgb(255, 255, 255);

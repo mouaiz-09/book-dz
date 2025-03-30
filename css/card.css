@@ -12,6 +12,9 @@
  padding: 3px;
 
 }
+img{
+  aspect-ratio: 1 / 1 !important;
+}
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -49,6 +52,7 @@
   font-family: "Vazirmatn", sans-serif;
  font-weight: 700;
  color: rgb(255, 255, 255);
+ font-size: 15px;
 }
 .df{
   border: 1px solid rgb(160, 153, 153);
