@@ -4,13 +4,13 @@ const section_nav = document.getElementById('part');
 const hestory_section = document.getElementById('hestory_section')
 const btn_clos = document.getElementById('clos');
 const sher_page = document.getElementById('sher');
-const btn_sher =document.getElementById('sher_btn');
-const input =document.getElementById('inp_book_sher')
+const btn_sher = document.getElementById('sher_btn');
+const input = document.getElementById('inp_book_sher')
 
 // مشاركة الرابط
 function sher_value() {
   let url = location.href;
-  input.value =url;
+  input.value = url;
 }
 sher_value();
 // فتح صفحة مشاركة الكتاب
@@ -34,3 +34,18 @@ btn_nav.onclick = () => {
 }
 
 
+
+// استخراج الـ ID من الرابط
+const urlParams = new URLSearchParams(window.location.search);
+const movieId = urlParams.get("id");
+
+fetch("https://openlibrary.org/search.json?q=harry+potter")
+  .then(response => response.json())
+  .then(movies => {
+
+
+    const movie = movies.data.find(m => m.id == movieId);
+    console.log(movie.id);
+    
+  })
+  .catch(error => console.error("خطأ في تحميل البيانات:", error));
