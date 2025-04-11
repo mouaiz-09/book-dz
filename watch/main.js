@@ -32,20 +32,18 @@ btn_nav.onclick = () => {
   section_nav.classList.toggle('h')
 
 }
+// تعديل المعلومات
 
 
 
-// استخراج الـ ID من الرابط
+
+
+
+
+
+// استخراج ID من الرابط
 const urlParams = new URLSearchParams(window.location.search);
-const movieId = urlParams.get("id");
-
-fetch("https://openlibrary.org/search.json?q=harry+potter")
-  .then(response => response.json())
-  .then(movies => {
+const bookId = urlParams.get('id');
 
 
-    const movie = movies.data.find(m => m.id == movieId);
-    console.log(movie.id);
-    
-  })
-  .catch(error => console.error("خطأ في تحميل البيانات:", error));
+
