@@ -18,7 +18,7 @@ btn_nav.onclick = () => {
 
 //book section
 
-  fetch('http://localhost:3000/books')
+  fetch('https://book-dz-v1.onrender.com/books')
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
 
@@ -74,7 +74,7 @@ btn_nav.onclick = () => {
 
 //hes section
 
-fetch('http://localhost:3000/books')
+fetch('https://book-dz-v1.onrender.com/books')
 .then(async response => await response.json()) // نحول الاستجابة إلى JSON
 .then(data => {
 
@@ -136,7 +136,4 @@ fetch('http://localhost:3000/books')
 
 
 
-
-
-// hestroy section 
 

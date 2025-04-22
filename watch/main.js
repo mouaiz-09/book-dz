@@ -56,7 +56,7 @@ function copyText() {
 const urlParams = new URLSearchParams(window.location.search);
 const bookId = urlParams.get('id');
 //استخراج المعلومات من id
-fetch('http://localhost:3000/book/' + bookId)
+fetch('https://book-dz-v1.onrender.com/book/' + bookId)
   .then(async response => await response.json())
   .then(data => {
     console.log(data);
@@ -93,7 +93,7 @@ fetch('http://localhost:3000/book/' + bookId)
 // المقترحات
 
 
-fetch('http://localhost:3000/books')
+fetch('https://book-dz-v1.onrender.com/books')
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
   
