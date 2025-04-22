@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> كتاب|book-dz</title>
     <!-- css file العامة -->
-    <link rel="stylesheet" href="/css/card.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/home-page.css">
 
-    <link rel="stylesheet" href="/css/book-category.css">
-    <link rel="stylesheet" href="/css/foter.css">
+    <link rel="stylesheet" href="../css/book-category.css">
+    <link rel="stylesheet" href="../css/foter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--css file خاصة watch-->
-    <link rel="stylesheet" href="/watch/css_wath/cont.css">
+    <link rel="stylesheet" href="../watch/css_wath/cont.css">
 
 
     <!--icon -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/207/207114.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/207/207114.png" type="image/x-icon">
     <!-- الخطوط العربية من جوجل -->
 
@@ -28,22 +29,22 @@
         href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Vazirmatn:wght@100..900&display=swap"
         rel="stylesheet">
     <!--   font-family: "Vazirmatn", sans-serif;  --> <!--    font-family: "Changa", sans-serif;-->
+    <!--04-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <!--   font-family: "Marhey", sans-serif;-->
+
 
 
     <!-- الخطوط الانجليزية-->
-    <!--01 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!--     font-family: "Great Vibes", cursive;-->
 
-    <!--02-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <!--  font-family: "DynaPuff", system-ui;-->
 
-    <!--03-->
+
+
+
+
+
 
 </head>
 
@@ -52,14 +53,14 @@
         <a href="/index.html">
 
             <div class="logo">
-                <h2>book <span>-</span> dz</h2>
+                <img src="../img/logo-navbar.png">
             </div>
         </a>
         <div class="links">
             <div class="thesection">
-                <a href="/index.html"> الرئيسة</a>
-                <a href="/category/book.html">الكتب</a>
-                <a href="/category/hst.html">الروايات</a>
+                <a href="../index.html"> الرئيسة</a>
+                <a href="../category/book.html">الكتب</a>
+                <a href="../category/hst.html">الروايات</a>
 
             </div>
             <div class="icon">
@@ -121,53 +122,58 @@
     <div class="cont">
         <div class="i">
             <div class="imgdz">
-                <div class="img-box">
-                    <img class="books-img"  id="cover" src="/img/img.jpg" style="width: 100%;" alt="غلاف الكتاب" srcset="">
+                <div class="img-box" style="flex: auto;">
+                    <img class="books-img" id="cover"
+                        src="https://img.freepik.com/free-vector/page-found-concept-illustration_114360-1869.jpg?semt=ais_hybrid&w=740"
+                        style="width: 100%;" alt="غلاف الكتاب" srcset="">
                 </div>
-                <h3>
+                <h3 style="font-family: marhey;">
                     book-dz
                 </h3>
 
             </div>
             <div class="bt_m">
-             
 
-                    <div class="btn" id="sher_btn">
-                        <h3>شارك مع اصدقائك</h3>
 
-                    </div>
-               
+                <div class="btn" id="sher_btn">
+                    <h3>شارك مع اصدقائك</h3>
+
+                </div>
+
             </div>
         </div>
         <div class="boox_info">
 
-            <div class="top">
-                <h3>
-                    <li>
-                        معلومات الكتاب
-                    </li>
-                </h3>
-            </div>
             <div class="con ">
+                <div class="tap">
+                    <h3 style="font-size: 25px;">
+                        <li dir="rtl">
+                            معلومات الكتاب
+                        </li>
+                    </h3>
+                </div>
                 <div class="i">
-                    <h3 >الاسم</h3>
-                    <h3 id="title">العدات الدرية</h3>
+                    <h3>الاسم</h3>
+                    <h3 id="title"> •••</h3>
                 </div>
                 <div class="i">
                     <h3>المؤلف</h3>
-                    <h3 id="author">جيمس كلير</h3>
+                    <h3 id="author"> •••<h3>
                 </div>
                 <div class="i">
                     <h3>التقيم</h3>
-                    <h3 id="rating">•••</h3>
+                    <h3 id="rating">
+
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </h3>
                 </div>
                 <div class="i d">
-                    <div class="don" >
+                    <div class="don">
                         <a href="#" id="downloadBtn">
-                        التنزيل
+                            التنزيل
                         </a>
                     </div>
-                
+
                     <div class="red">
                         قراءة
                     </div>
@@ -175,15 +181,15 @@
 
             </div>
             <div class="comntar">
-                <div class="top">
+                <div class="tap">
                     <h3>
-                        <li>
+                        <li dir="rtl">
 
                             اضافة تعليق
                         </li>
                     </h3>
                     <div class="ds">
-                        <input type="text">
+                        <input type="text" style="    font-family: Changa, sans-serif; text-align: center;">
                         <div class="de">
                             <button type="submit">submit</button>
                         </div>
@@ -197,7 +203,7 @@
 
     <!--انواع الكتب-->
     <section class="categ " style="z-index: 1 !important;">
-        <div class="top">
+        <div class="tsp">
             <h3 dir="rtl">
                 <li>
                     تصنيفات الكتب
@@ -250,480 +256,34 @@
 
 
     <!--مقترحات-->
-    <section class="book   " style="z-index: 1 !important;" id="book_section">
+    <!--اخر الروايات-->
+    <section class="book  " style="z-index: 1 !important;" id="hestory">
 
-        <div class="top">
-            <h3 dir="rtl">
-                <li>
-                    مقترحات لك
-                </li>
+        <div class="tsp">
+
+            <h3>
+
+                📚 كتب مقترحة لك
+
             </h3>
         </div>
-        <div class="df">
+        <!--الرويات-->
+        <div class="df" id="cont_hest">
 
-            <div class="bd">
-                <a href="/category/book.html?id=5" target="_blank" rel="noopener noreferrer">
+            <div class="bd" id="hestory_section">
 
-                    <div class="card">
-                        <div class="img">
 
-                            <img class="book-img"
-                                src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg"
-                                alt="Avatar" style="width:100%">
-                        </div>
-                        <div class="container">
-                            <h4>العادات الدرية</h4>
-                            <p>جيمس كلير</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="card">
-                    <div class="img">
 
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img">
-
-                        <img class="book-img"
-                            src="https://m.media-amazon.com/images/I/715+-eJuGdL._UF1000,1000_QL80_.jpg" alt="Avatar"
-                            style="width:100%">
-                    </div>
-                    <div class="container">
-                        <h4>العادات الدرية</h4>
-                        <p>جيمس كلير</p>
-                    </div>
-                </div>
             </div>
         </div>
-        <a href="/category/book.html" rel="noopener noreferrer">
+        <!--no data found -->
+        <div class="none" id="not_found_hest"
+            style="display: flex; justify-content: center; height: 20vh;overflow: hidden; background-color: aliceblue;">
+            <img src="https://www.wscubetech.com/blog/wp-content/uploads/2024/05/what-Is-a-soft-404-error-1024x431.webp"
+                alt="" srcset="">
+        </div>
+
+        <a href="../category/book.html" rel="noopener noreferrer" id="moor_hest">
             <div class="moor">
 
                 <p>
@@ -734,54 +294,22 @@
             </div>
         </a>
     </section>
-    <!--حسابات مواقع التواصل-->
-    <div class="ds " style="z-index: 1 !important;">
-
-        <section class="sh">
-            <div class="top">
-                <h3>
-                    تابعنا باه تعرف غير الجديد
-                </h3>
-            </div>
-            <div class="bd">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-
-                    <div class="s">
-                        <img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="" srcset="">
-
-                        <p>facebook</p>
-                    </div>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-
-                    <div class="s">
-                        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="">
-                        <p>instgram</p>
-                    </div>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-
-                    <div class="s">
-                        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" srcset="">
-                        <p>twter</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </div>
     <!--مشاركة الكتاب-->
     <div class="sher none " id="sher">
         <div class="contr">
-            <div class="tp">
-                <p>book-dz</p>
-                <p>2025</p>
+            <div class="tp" style="display: flex; justify-content: center;">
+             
+                <div class="logo" >
+                    <img src="../img/sher-logo.png">
+                </div>
             </div>
             <div class="bs">
                 <div class="cen">
                     <input type="text" disabled value="dzdz" id="inp_book_sher">
+                    <button class="btn_sher" onclick="copyText()">انسخ النص</button>
                 </div>
                 <p>
-                 قم بنسخ الرابط ومشاركته
+                    قم بنسخ الرابط ومشاركته
 
                 </p>
             </div>
@@ -791,13 +319,13 @@
         </div>
     </div>
 
+
 </body>
 <!-- **خاتمة الموقع **معلومات -->
-<footer style="margin-top: 300px;">
+<footer>
     <div class="count">
         <div class="top">
-            <h3>book-dz</h3>
-            <p>وقل ربي زدني علما</p>
+            <img src="../img/logp-landhome-removebg-preview.png" style=" height: 300px;" alt="" srcset="">
         </div>
         <div class="bod">
             <div class="call">
@@ -858,7 +386,10 @@
 
             </div>
             <div class="d3">
-                <h3>2025</h4>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+
+                    <h4>حقوق النشر@</h4>
+                </a>
 
 
             </div>
@@ -874,6 +405,7 @@
 
     </div>
 </footer>
+
 <script src="main.js"></script>
 
 </html>

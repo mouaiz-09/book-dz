@@ -55,9 +55,10 @@ nav {
     align-items: center;
     position: sticky;
     top: 0px;
-    background-color:rgba(6, 150, 102, 0.877);
 
 
+    height: auto;
+background-color: rgb(3, 116, 82);
 }
 
 .logo {
@@ -67,9 +68,11 @@ nav {
 
 .logo h2 {
     font-size: 35px;
-    font-weight: 00;
-    font-family: "Great Vibes", cursive;
-    text-transform: capitalize;
+ 
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+      font-style: normal
+    
 
 
 }
@@ -117,7 +120,7 @@ span {
     z-index: 1000;
     position: fixed;
     top: 55px;
-    right: 8px;
+    right:  0px;
     width: 300px;
     height: 90vh;
     border-radius: 10px;

@@ -14,7 +14,7 @@
 
 .imgdz {
     width: 430px;
-    padding: 5px;
+
     background-color: rgb(255, 255, 255);
     border-radius: 9px;
     text-align: center;
@@ -55,7 +55,7 @@
 
 }
 
-.top h3 {
+.tsp h3 {
     font-family: "Changa", sans-serif;
     font-size: 40px;
     margin-bottom: 25px;
@@ -233,9 +233,9 @@
 
 .contr {
     width: 500px;
-    height: 200px;
+    height: 250px;
     border-radius: 15px;
-    background-color: rgb(36, 35, 35);
+    background-color: #242323;
     padding: 18px;
     text-align: center;
     color: whitesmoke !important;
@@ -260,11 +260,18 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .cen {
     width: 100%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    
 }
 
 .cen input {
@@ -275,7 +282,7 @@ margin-top: 10px;
     color: black !important;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 25px;
+
 }
 
 .bs p {
@@ -297,15 +304,38 @@ margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 1, 1);
+    background-color: rgb(255, 0, 0);
     position: absolute;
-    top: 130px;
-    left:  200px;
+    top: 193px;
+    right: 230px;
     border-radius: 50%;
-    opacity: 0.7;
+   
 
 }
 
 .non:hover {
-    opacity: 1;
+ background-color: rgb(204, 4, 4)
+ ;
+ cursor: pointer;
+}
+
+.tap {
+    text-align: end;
+    font-size: 20px;
+    font-family: "Changa", sans-serif;
+}
+
+.btn_sher {
+    background-color: rgba(14, 165, 77, 0.822);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: cursive;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.btn_sher:hover{
+    padding: 10px 15px;
 }

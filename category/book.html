@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>احدث الكتب|book-dz</title>
     <!-- css file local -->
-    <link rel="stylesheet" href="/css/book-category.css">
-    <link rel="stylesheet" href="/css/card.css">
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/land-card.css">
-    <link rel="stylesheet" href="book-category.css">
-    <link rel="stylesheet" href="/css/foter.css">
-    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="../css/book-category.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/land-card.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/foter.css">
+    <link rel="stylesheet" href="../css/home-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--css loc-->
     <link rel="stylesheet" href="main.css">
@@ -28,6 +28,11 @@
         href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Vazirmatn:wght@100..900&display=swap"
         rel="stylesheet">
     <!--   font-family: "Vazirmatn", sans-serif;  --> <!--    font-family: "Changa", sans-serif;-->
+    <!--04-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <!--   font-family: "Marhey", sans-serif;-->
 
 
     <!-- الخطوط الانجليزية-->
@@ -44,7 +49,12 @@
     <!--  font-family: "DynaPuff", system-ui;-->
 
     <!--03-->
-
+    <style>
+        .bd::-webkit-scrollbar {
+            width: 5px;
+            padding: 50px;
+        }
+    </style>
 </head>
 
 <body style="background-color: rgb(4, 185, 125); color: #ffffff;">
@@ -52,12 +62,12 @@
         <a href="/index.html">
 
             <div class="logo">
-                <h2>book <span>-</span> dz</h2>
+                <img src="../img/logo-navbar.png">
             </div>
         </a>
         <div class="links">
             <div class="thesection">
-                <a href="/index.html"> الرئيسة</a>
+                <a href="../index.html"> الرئيسة</a>
                 <a href="book.html" class="hover">الكتب</a>
                 <a href="hst.html">الروايات</a>
 
@@ -116,16 +126,16 @@
         </div>
 
     </nav>
-
+    <!-- البحث-->
     <section class="land ">
         <div class="cont">
 
             <div class="lesinput">
                 <input type="text" class="serch" placeholder=" 📚 ابــــحث عن كتـــابـــــك المــــفــضــل   "
                     id="srech">
-                <a href="serch.html"  id="url" rel="noopener noreferrer">
+                <a href="serch.html" id="url" rel="noopener noreferrer">
 
-                    <button class="subm" id="submit"  type="submit">
+                    <button class="subm" id="submit" type="submit">
                         <span>🧶</span>
                         بـــحـــث
 
@@ -134,22 +144,96 @@
             </div>
 
             <div class="bt">
-                <p>أكثر من ألف كتاب بين يديك مجانا🫠</p>
+                <p style="color: rgba(245, 245, 245, 0.726);">أكثر من ألف كتاب بين يديك مجانا🫠</p>
             </div>
         </div>
     </section>
+    |<!--اخر الكتب العربية-->
+    <section class="book   " style="z-index: 1 !important; margin-top: 0px; border: none;" id="book_section">
+
+        <div class="tsp" style="margin-top: 0px;">
+            <h3>
+
+                📚 اخر الكتب
+
+            </h3>
+        </div>
+        <div class="df" style=" border: none;">
 
 
+            <div class="bd" style="flex-wrap: wrap; row-gap: 25px;max-height: 70vh; overflow: scroll; " id="book">
+            </div>
 
-  
+            <!--no data found -->
+            <div class="none " id="not_found"
+                style="display: flex; justify-content: center; height: 20vh;overflow: hidden; background-color: aliceblue;">
+                <img src="https://www.wscubetech.com/blog/wp-content/uploads/2024/05/what-Is-a-soft-404-error-1024x431.webp"
+                    alt="" srcset="">
+            </div>
+        </div>
+
+    </section>
+
+    <!--انواع الكتب-->
+    <section class="categ " style="z-index: 1 !important;">
+        <div class="tsp">
+            <h3 dir="rtl">
+
+                تصنيفات الكتب
+                📚
+            </h3>
+        </div>
+        <div class="bodyy">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+
+                <div class="ca">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2013/2013182.png"
+                        style="width: 30%; margin-right: 3px;" alt="" srcset="">
+                    <h3>كتب علم نفس</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2918/2918211.png"
+                        style="width: 30%; margin-right: 3px;" alt="" srcset="">
+                    <h3>كتب دينية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <img src="https://cdn-icons-png.flaticon.com/128/18253/18253904.png" style="width: 30%;" alt=""
+                        srcset="">
+                    <h3>كتب فلسفية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2134/2134325.png"
+                        style="width: 30%;margin-right: 3px; " alt="" srcset="">
+                    <h3>كتب علمية</h3>
+                </div>
+            </a>
+            <a href="#">
+
+                <div class="ca">
+                    <img src="https://cdn-icons-png.flaticon.com/128/14963/14963461.png" style="width: 30%" alt=""
+                        srcset="">
+                    <h3>كتب تاريخية</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <script src="main.js"></script>
 </body>
 <!-- **خاتمة الموقع **معلومات -->
-<footer style="display: none;">
+<footer>
     <div class="count">
         <div class="top">
-            <h3>book-dz</h3>
-            <p>وقل ربي زدني علما</p>
+            <img src="../img/logp-landhome-removebg-preview.png" style=" height: 300px;" alt="" srcset="">
         </div>
         <div class="bod">
             <div class="call">

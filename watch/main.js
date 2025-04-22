@@ -19,7 +19,6 @@ btn_sher.onclick = () => {
 
 }
 
-
 // غلق صفحة مشاركة الكتاب
 btn_clos.onclick = () => {
   sher_page.classList.add('none')
@@ -32,7 +31,19 @@ btn_nav.onclick = () => {
   section_nav.classList.toggle('h')
 
 }
-// تعديل المعلومات
+
+function copyText() {
+  // نجيب النص
+  var text = input.value;
+
+  // ننسخو للكليب بورد
+  navigator.clipboard.writeText(text)
+  .then(()=> {
+    alert("تم نسخ النص!");
+  }, function(err) {
+    alert("فشل النسخ: " + err);
+  });
+}
 
 
 
@@ -44,6 +55,101 @@ btn_nav.onclick = () => {
 // استخراج ID من الرابط
 const urlParams = new URLSearchParams(window.location.search);
 const bookId = urlParams.get('id');
+//استخراج المعلومات من id
+fetch('http://localhost:3000/book/' + bookId)
+  .then(async response => await response.json())
+  .then(data => {
+    console.log(data);
+    //var
+    const imgcover = document.getElementById('cover');
+    const titel = document.getElementById('title');
+    const auther = document.getElementById('author');
+    const scoor = document.getElementById('rating')
+
+    // data
+    titel.innerHTML = data.name;
+    auther.innerHTML = data.auter;
+    imgcover.src = data.cover;
+
+    //scoor nember:
+    if (data.scoor >= 1) {
+      scoor.innerHTML = ""
+      for (let i = 0; i <= data.scoor; i++) {
+        if (i >= 5) {
+          break;
+        }
+        scoor.innerHTML += `<i class="fa-solid fa-star" style="color: #FFD43B;"></i>`
+      }
+
+    }
+    else if(data.scoor ==0){
+    scoor.innerHTML=' '
+    }
+
+
+
+  })
+
+// المقترحات
+
+
+fetch('http://localhost:3000/books')
+  .then(async response => await response.json()) // نحول الاستجابة إلى JSON
+  .then(data => {
+  
+    
+
+    for (let i = 0; i < data.length; i++) {
+      if (i >= 7) {
+        break;
+
+      }
+
+
+      // amke a card 
+      const link = document.createElement('a');
+      const card = document.createElement('div')
+      card.classList.add('card')
+      const box_img = document.createElement('div')
+      box_img.classList.add('img')
+      const img = document.createElement('img')
+      img.style = 'width: 100%'
+      img.classList.add('book-img')
+      const author = document.createElement('p')
+      const desc = document.createElement('div')
+      const titl = document.createElement('h4')
+      //  تعما ر المعلومات
+      titl.textContent = data[i].name
+      img.src = data[i].cover
+      author.textContent = data[i].auter
+      link.href = `../watch/index.html?id=` + data[i]._id;
+
+
+      box_img.appendChild(img)
+
+      desc.appendChild(titl)
+      desc.appendChild(author)
+      card.appendChild(box_img)
+      card.appendChild(desc)
+      link.appendChild(card)
+
+      hestory_section.appendChild(link)
+
+    }
+
+
+  })
+  .catch(error => {
+    console.error('حدث خطأ:', error);
+    const cont = document.getElementById("cont_hest");
+    const link = document.getElementById("moor_hest");
+    const nofound=document.getElementById('not_found_hest');
+    nofound.classList.remove('none')
+    link.style.display = "none";
+    cont.style.display = "none";
+  
+  });
+
 
 
 
