@@ -46,7 +46,7 @@ btn_nav.onclick = () => {
       img.src = data[i].cover
       author.textContent = data[i].auter
 
-      link.href = `../watch/index.html?id=` + data[i]._id;
+      link.href = `./watch/index.html?id=` + data[i]._id;
 
       //التلصاق
       box_img.appendChild(img)
@@ -102,7 +102,7 @@ fetch('https://book-dz-v1.onrender.com/books')
     img.src = data[i].cover
     author.textContent = data[i].auter
 
-    link.href = `/front-end/watch/index.html?id=` + data[i]._id;
+    link.href = `./watch/index.html?id=` + data[i]._id;
 
     //التلصاق
     box_img.appendChild(img)

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول - Book DZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            font-size: 1.2rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #show-password-btn {
+            background: none;
+            color: #007bff;
+            border: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔑 تسجيل الدخول</h1>
+    <form id="login-form">
+        <input type="password" id="password" placeholder="أدخل كلمة المرور" required />
+        <button type="submit">دخول</button>
+        <button type="button" id="show-password-btn">👁️ إظهار كلمة المرور</button>
+    </form>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const password = document.getElementById('password').value.trim();
+
+            // تحقق من كلمة السر (يمكنك تخصيصها حسب ما تحب)
+            if (password === 'adminpassword') {
+                sessionStorage.setItem('modapp', 'true'); // استخدام sessionStorage
+                window.location.href = 'admin.html'; // إعادة التوجيه للصفحة الرئيسية بعد النجاح
+            } else {
+                alert('كلمة المرور غير صحيحة!');
+            }
+        });
+
+        // وظيفة إظهار كلمة المرور
+        const showPasswordBtn = document.getElementById('show-password-btn');
+        const passwordInput = document.getElementById('password');
+
+        showPasswordBtn.addEventListener('click', function () {
+            // إذا كانت كلمة المرور مخفية، نعرضها، وإذا كانت معروضة نخبّيها
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                showPasswordBtn.textContent = '🙈 إخفاء كلمة المرور';
+            } else {
+                passwordInput.type = 'password';
+                showPasswordBtn.textContent = '👁️ إظهار كلمة المرور';
+            }
+        });
+
+       
+    </script>
+</body>
+
+</html>
