@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    /* background-color: #a0939381;*/
+    background-color: rgb(10, 20, 30);
+
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+.dz {
+    padding: 50px 10px;
+
+
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(3 116 82);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+/*side menu*/
+.sidemenu {
+    width: 270px;
+    height: 75vh;
+    background-color: rgb(71, 64, 64);
+
+    color: whitesmoke;
+    border-radius: 10px;
+    position: sticky;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+
+
+}
+
+.top {
+    width: 100%;
+    background-color: rgb(0, 126, 109);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.top h1 {
+
+    font-family: "Marhey", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.bd {
+    width: 100%;
+    flex: 1;
+    padding: 20px 0px;
+
+}
+
+.bd ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 7px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+
+}
+
+li {
+    background-color: rgb(0, 126, 109);
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+    font-family: "Changa", sans-serif;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.bt {
+    text-align: center;
+    width: 100%;
+
+}
+
+.bt a {
+    padding: 9px 50px;
+    border-radius: 8px;
+    margin-bottom: 0px;
+
+    position: relative;
+    top: -20px;
+
+    background-color: rgb(8, 96, 102);
+}
+
+.link {
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(78, 72, 72);
+    width: 100%;
+}
+
+
+/*ds*/
+.dashbord {
+    width: 79%;
+    height: 75vh;
+    background-color: rgb(228, 216, 216);
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+
+}
+
+.co {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 64, 64);
+    gap: 10px;
+}
+
+.total {
+    height: 70%;
+    margin-left: 5px;
+    width: 47%;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.total h1 {
+    font-size: 30px;
+    font-family: "Changa", sans-serif;
+}
