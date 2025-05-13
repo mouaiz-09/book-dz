@@ -1,0 +1,42 @@
+nav{
+    
+    justify-content: space-between;
+    align-items:stretch ;
+    flex-direction:row ;
+    width: 100%;
+    z-index: 100;
+}
+.logo{
+    flex: 1;
+}
+.links{
+    flex: 1;
+   justify-content: end;
+}
+.lan-2 {
+    display: block !important;
+}
+.sh {
+    width: 100%;
+}
+.s{
+    padding: 0 !important;
+}
+.thesection{
+    display: none !important;
+}
+.info{
+    display: none !important;
+}
+.bodyy{
+    display: block !important;
+
+}
+.ca{
+    margin-top: 30px;
+}
+.part{
+    right: 58px;
+    top: 70px;
+    height: auto;
+}

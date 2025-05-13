@@ -57,7 +57,7 @@ function copyText() {
 const urlParams = new URLSearchParams(window.location.search);
 const bookId = urlParams.get('id');
 //استخراج المعلومات من id
-fetch('https://book-dz-v1.onrender.com/book/' + bookId)
+fetch('https://back-end-v1.onrender.com/api/main/books/book/' + bookId)
   .then(async response => await response.json())
   .then(data => {
     //var
@@ -108,13 +108,13 @@ fetch('https://book-dz-v1.onrender.com/book/' + bookId)
 // المقترحات
 
 
-fetch('https://book-dz-v1.onrender.com/books')
+fetch('https://back-end-v1.onrender.com/api/main/books')
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
 
 
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.books.length; i++) {
       if (i >= 7) {
         break;
 
@@ -133,11 +133,15 @@ fetch('https://book-dz-v1.onrender.com/books')
       const author = document.createElement('p')
       const desc = document.createElement('div')
       const titl = document.createElement('h4')
-      //  تعما ر المعلومات
-      titl.textContent = data[i].name
-      img.src = data[i].cover
-      author.textContent = data[i].auter
-      link.href = `../watch/index.html?id=` + data[i]._id;
+    
+      // تعمار المعلومات
+      titl.textContent = data.books[i].name
+      img.src = data.books[i].cover
+      author.textContent = data.books[i].auter
+      
+
+
+      link.href = `./watch/index.html?id=` + data.books[i]._id;
 
 
       box_img.appendChild(img)

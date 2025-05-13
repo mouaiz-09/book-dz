@@ -18,12 +18,14 @@ btn_nav.onclick = () => {
 
 //book section
 
-fetch('https://book-dz-v1.onrender.com/books')
+
+fetch('https://back-end-v1.onrender.com/api/main/books')
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
+   
+    
 
-    for (let i = 0; i < data.length; i++) {
-      console.log();
+    for (let i = 0; i < data.books.length; i++) {
 
 
 
@@ -42,11 +44,11 @@ fetch('https://book-dz-v1.onrender.com/books')
       const author = document.createElement('p')
 
       // تعمار المعلومات
-      titl.textContent = data[i].name
-      img.src = data[i].cover
-      author.textContent = data[i].auter
+      titl.textContent = data.books[i].name
+      img.src = data.books[i].cover
+      author.textContent = data.books[i].auter
 
-      link.href = `./watch/index.html?id=` + data[i]._id;
+      link.href = `./watch/index.html?id=` + data.books[i]._id;
 
       //التلصاق
       box_img.appendChild(img)
@@ -72,16 +74,18 @@ fetch('https://book-dz-v1.onrender.com/books')
 
   });
 
-//hes section
+//novels section
 
-fetch('https://book-dz-v1.onrender.com/books')
+fetch("https://back-end-v1.onrender.com/api/main/novels")
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
-  
+    
+    
+    
+    console.log(data.books);
+    for (let i = 0; i < data.novales.length; i++) {
 
-    for (let i = 0; i < data.length; i++) {
-     
-     
+
 
 
 
@@ -102,33 +106,13 @@ fetch('https://book-dz-v1.onrender.com/books')
 
 
       // تعمار المعلومات
-      titl.textContent = data[i].name
-      img.src = data[i].cover
-      author.textContent = data[i].auter
-      //scoor nember:
-      if (data[i].scoor ) {
-        let x =data[i].scoor
-
-     
-        
-        for (let i = 0; i < x; i++) {
-        if(i==5){
-          break;
-        }
-        else{
-
-          scoor.innerHTML += `<i class="fa-solid fa-star" style="color: #FFD43B;"></i>`
-        }
-        
-        }
-
-      }
-      else if (data.scoor == 0) {
-        scoor.innerHTML = ' '
-      }
+      titl.textContent = data.novales[i].name
+      img.src = data.novales[i].cover
+      author.textContent = data.novales[i].auter
+      
 
 
-      link.href = `./watch/index.html?id=` + data[i]._id;
+      link.href = `./watch/index.html?id=` + data.novales[i]._id;
 
       //التلصاق
       box_img.appendChild(img)
