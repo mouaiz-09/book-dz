@@ -70,12 +70,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./admin.html" rel="noopener noreferrer"></a>
-                        📚
-                        اضافة كتاب
+                        <a href="book.html" rel="noopener noreferrer">
+                            📚
+                            اضافة كتاب
+                        </a>
                     </li>
                     <li>
-                        <a href="./admin.html" rel="noopener noreferrer">
+                        <a href="hestory.html" rel="noopener noreferrer">
 
                             📓
                             اضافة روايات
@@ -118,7 +119,7 @@
                             📚 عدد لكتب
                         </h1>
                     </div>
-                    <h1 style=" font-size: 60px;">500</h1>
+                    <h1 id="books" style=" font-size: 60px;">....</h1>
                 </div>
                 <div class="total">
                     <div style="text-align: center; padding: 10px; background-color:  rgb(0, 126, 109);color: whitesmoke; font-size: 30px;
@@ -129,7 +130,8 @@
                             📓 عدد الروايات
                         </h1>
                     </div>
-                    <h1 style=" font-size: 60px;">500</h1>
+                    <h1  id="books" style=" font-size: 60px;">....
+                    </h1>
                 </div>
 
             </div>
@@ -139,5 +141,17 @@
 
 
 </body>
+<script>
+
+    const books =  document.getElementById('books') 
+    fetch('https://book-dz-v1.onrender.com/books')
+        .then(async response => await response.json()) // نحول الاستجابة إلى JSON
+        .then(data => {
+
+            books.innerHTML = data.length
+        }
+
+        )
+</script>
 
 </html>

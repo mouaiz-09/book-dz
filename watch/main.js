@@ -7,6 +7,7 @@ const sher_page = document.getElementById('sher');
 const btn_sher = document.getElementById('sher_btn');
 const input = document.getElementById('inp_book_sher')
 
+
 // مشاركة الرابط
 function sher_value() {
   let url = location.href;
@@ -38,11 +39,11 @@ function copyText() {
 
   // ننسخو للكليب بورد
   navigator.clipboard.writeText(text)
-  .then(()=> {
-    alert("تم نسخ النص!");
-  }, function(err) {
-    alert("فشل النسخ: " + err);
-  });
+    .then(() => {
+      alert("تم نسخ النص!");
+    }, function (err) {
+      alert("فشل النسخ: " + err);
+    });
 }
 
 
@@ -59,31 +60,45 @@ const bookId = urlParams.get('id');
 fetch('https://book-dz-v1.onrender.com/book/' + bookId)
   .then(async response => await response.json())
   .then(data => {
-    console.log(data);
     //var
     const imgcover = document.getElementById('cover');
     const titel = document.getElementById('title');
     const auther = document.getElementById('author');
     const scoor = document.getElementById('rating')
+    const dw = document.getElementById('downloadBtn')
+
 
     // data
     titel.innerHTML = data.name;
     auther.innerHTML = data.auter;
     imgcover.src = data.cover;
+    dw.href = data.link
+
+
+
 
     //scoor nember:
-    if (data.scoor >= 1) {
-      scoor.innerHTML = ""
-      for (let i = 0; i <= data.scoor; i++) {
-        if (i >= 5) {
+
+
+    if (data.scoor ) {
+      scoor.innerHTML =""
+      const x = data.scoor;
+    
+      
+      for (let i = 0; i <= x; i++) {
+        if(i==5){
           break;
         }
-        scoor.innerHTML += `<i class="fa-solid fa-star" style="color: #FFD43B;"></i>`
+        else{
+
+          scoor.innerHTML += `<i class="fa-solid fa-star" style="color: #FFD43B;"></i>`
+        }
+        
       }
 
     }
-    else if(data.scoor ==0){
-    scoor.innerHTML=' '
+    else if (data.scoor == 0) {
+      scoor.innerHTML = ' '
     }
 
 
@@ -96,8 +111,8 @@ fetch('https://book-dz-v1.onrender.com/book/' + bookId)
 fetch('https://book-dz-v1.onrender.com/books')
   .then(async response => await response.json()) // نحول الاستجابة إلى JSON
   .then(data => {
-  
-    
+
+
 
     for (let i = 0; i < data.length; i++) {
       if (i >= 7) {
@@ -143,11 +158,11 @@ fetch('https://book-dz-v1.onrender.com/books')
     console.error('حدث خطأ:', error);
     const cont = document.getElementById("cont_hest");
     const link = document.getElementById("moor_hest");
-    const nofound=document.getElementById('not_found_hest');
+    const nofound = document.getElementById('not_found_hest');
     nofound.classList.remove('none')
     link.style.display = "none";
     cont.style.display = "none";
-  
+
   });
 
 

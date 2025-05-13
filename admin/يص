@@ -1,0 +1,21 @@
+  <h1>📚 لوحة تحكم - Book DZ</h1>
+
+
+      <form id="book-form" style="display: flex;
+      flex-direction: column;
+width: 70%;
+justify-content: center;      ">
+        <input type="text" id="name" placeholder="اسم الكتاب" required />
+        <input type="text" id="auter" placeholder="المؤلف" required />
+        <input type="number" id="scoor" placeholder="التقييم (من 0 إلى 5)" min="0" max="5" required />
+        <input type="url" id="cover" placeholder="رابط صورة الغلاف (مباشر أو من Drive)" required />
+        <input type="url" id="pdf" placeholder="رابط ملف الكتاب (PDF من Drive)" required />
+
+        <div id="preview-container">
+          <div id="cover-preview"></div>
+          <div id="book-info"></div>
+        </div>
+
+        <button id="submit-btn">📘 إنشاء الكتاب</button>
+      </form>
+    </div>

@@ -28,9 +28,7 @@ nav {
     align-items: center;
     padding: 10px;
     background-color: rgb(3 116 82);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  
 }
 
 
@@ -136,7 +134,7 @@ li:hover {
 /*ds*/
 .dashbord {
     width: 79%;
-    height: 75vh;
+    min-height: 75vh;
     background-color: rgb(228, 216, 216);
     border-radius: 15px;
     display: flex;
@@ -172,4 +170,47 @@ li:hover {
 .total h1 {
     font-size: 30px;
     font-family: "Changa", sans-serif;
+}
+
+/**/
+#addBookForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+    margin-top: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+#addBookForm input,
+#addBookForm button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 100%;
+    
+}
+
+#addBookForm input {
+    background-color: #222;
+    color: white;
+}
+
+#addBookForm input::placeholder {
+    color: #aaa;
+}
+
+#addBookForm button {
+    background-color: #00b894;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBookForm button:hover {
+    background-color: #019875;
 }

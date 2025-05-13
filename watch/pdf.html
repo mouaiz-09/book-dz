@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>عرض الكتاب - Book DZ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    .pdf-container {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+    .error {
+      text-align: center;
+      margin-top: 50px;
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function getPDFUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("file");
+  }
+
+  const pdfUrl = getPDFUrl();
+
+  if (pdfUrl) {
+    const iframe = document.createElement("iframe");
+    iframe.src = pdfUrl;
+    iframe.className = "pdf-container";
+    document.body.appendChild(iframe);
+  } else {
+    const errorMsg = document.createElement("div");
+    errorMsg.className = "error";
+    errorMsg.textContent = "لم يتم توفير رابط ملف PDF في الرابط!";
+    document.body.appendChild(errorMsg);
+  }
+</script>
+
+</body>
+</html>

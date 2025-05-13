@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم - Book DZ</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- #icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- arbic fonts-->
+  <!--01 *02-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Vazirmatn:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!--   font-family: "Vazirmatn", sans-serif;  --> <!--    font-family: "Changa", sans-serif;-->
+
+  <!--04-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+  <!--   font-family: "Marhey", sans-serif;-->
+
+
+  <!--02-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<nav>
+  <div class="logo">
+    <img src="/img/logo-navbar.png" alt="logo" srcset="">
+  </div>
+</nav>
+
+<body>
+
+  <div class="dz">
+    <div class="dashbord">
+      <!-- كارت جديد لإضافة كتاب -->
+      <div class="boxx">
+        <div class="box book">
+          <div style="text-align: center; padding: 10px; background-color:  rgb(0, 126, 109);color: whitesmoke; font-size: 30px;
+          font-family: 'Marhey', sans-serif; font-weight: 900;
+          border-radius: 5px 5px 0 0px; margin-bottom: 10px;">
+            <h1>
+              اضافة رواية جديد
+            </h1>
+          </div>
+          <form id="addBookForm" style="padding: 10px;">
+
+            <input id="name" type="text" placeholder="اسم الكتاب" required>
+            <input id="auter" type="text" placeholder="المؤلف" required>
+            <input id="scoor" max="5" type="number" placeholder="التقييم (من 0 إلى 5)" min="0" max="5">
+            <input id="cover" type="url" placeholder="رابط الصورة (Drive أو مباشر)">
+            <input id="pdf" type="url" placeholder="رابط الملف PDF (Drive)">
+            <button id="submit-btn" type="submit">➕ أضف الكتاب</button>
+          </form>
+        </div>
+      </div>
+
+
+      <section class="sidemenu">
+        <div class="top">
+          <h1> 📊
+
+            القائمة
+
+
+          </h1>
+        </div>
+        <div class="bd">
+          <ul>
+            <li>
+              <a href="./dashbord.html" rel="noopener noreferrer">
+
+                🛠️
+                الصفحة الرئيسة
+              </a>
+            </li>
+            <li>
+              <a href="#" rel="noopener noreferrer">
+
+                🏛️
+                اﻹدارة
+              </a>
+            </li>
+            <li style="opacity: 1 !important;">
+              <a href="admin.html" rel="noopener noreferrer">
+                📚
+                اضافة كتاب
+              </a>
+            </li>
+            <li>
+              <a href="./admin.html" rel="noopener noreferrer">
+
+                📓
+                اضافة روايات
+              </a>
+            </li>
+            <li style="background-color: rgba(194, 0, 0, 0.815);">
+              🔒
+              متقدم
+
+            </li>
+          </ul>
+        </div>
+        <div class="bt">
+          <a href="../index.html" target="_blank" rel="noopener noreferrer">
+
+            Book-dz
+            <i style="margin-left: 7px; " class="fa-solid fa-arrow-up-right-from-square"></i>
+
+          </a>
+          <p style="font-weight: 500; color: rgb(128, 125, 125); font-size: 15px; padding: 0;margin: 0;">@2025</p>
+
+      </section>
+
+    </div>
+
+    <script>
+      document.title += "history"
+      const nameInput = document.getElementById('name');
+      const auterInput = document.getElementById('auter');
+      const scoorInput = document.getElementById('scoor');
+      const coverInput = document.getElementById('cover');
+      const pdfInput = document.getElementById('pdf');
+
+      const previewContainer = document.getElementById('preview-container');
+      const previewDiv = document.getElementById('cover-preview');
+      const infoDiv = document.getElementById('book-info');
+      const submitBtn = document.getElementById('submit-btn');
+
+      function getDirectDriveLink(url) {
+        const match = url.match(/\/file\/d\/(.*?)(\/|$)/);
+        return match ? `https://drive.google.com/uc?export=download&id=${match[1]}` : url;
+      }
+
+      function isImageUrl(url) {
+        return /(\\.jpg|\\.jpeg|\\.png|\\.gif|\\.webp)$/i.test(url) || url.includes('drive.google.com');
+      }
+
+      function updatePreview() {
+        const name = nameInput.value.trim();
+        const auter = auterInput.value.trim();
+        const scoor = scoorInput.value.trim();
+        const coverUrl = coverInput.value.trim();
+        const pdfUrl = pdfInput.value.trim();
+
+        if (name && auter && scoor && coverUrl && pdfUrl) {
+          previewContainer.style.display = 'flex';
+
+          const imageSrc = getDirectDriveLink(coverUrl);
+          const pdfLink = getDirectDriveLink(pdfUrl);
+
+          if (isImageUrl(coverUrl)) {
+            previewDiv.innerHTML = `<img src="${coverInput.value}" alt="صورة الغلاف" />`;
+          } else {
+            previewDiv.innerHTML = `<p style='color:red;'>⚠️ لا يمكن عرض الصورة. الرجاء استخدام رابط مباشر.</p>`;
+          }
+
+          infoDiv.innerHTML = `
+          <div class="info-field"><span class="info-label">📖 العنوان:</span> ${name}</div>
+          <div class="info-field"><span class="info-label">✍️ المؤلف:</span> ${auter}</div>
+          <div class="info-field"><span class="info-label">⭐ التقييم:</span> ${scoor}</div>
+          <div class="info-field"><span class="info-label">📄 رابط الكتاب:</span> <a href="${pdfLink}" target="_blank" style="color:blue;">تحميل الكتاب</a></div>
+        `;
+
+          submitBtn.style.display = 'block';
+        } else {
+          previewContainer.style.display = 'none';
+          previewDiv.innerHTML = '';
+          infoDiv.innerHTML = '';
+          submitBtn.style.display = 'none';
+        }
+      }
+
+      [nameInput, auterInput, scoorInput, coverInput, pdfInput].forEach(input => {
+        input.addEventListener('input', updatePreview);
+      });
+
+      submitBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+
+        const book = {
+          name: nameInput.value,
+          auter: auterInput.value,
+          scoor: parseFloat(scoorInput.value),
+          cover: getDirectDriveLink(coverInput.value),
+          link: getDirectDriveLink(pdfInput.value)
+        };
+
+        try {
+          const res = await fetch('https://book-dz-v1.onrender.com/hestory', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(book)
+          });
+
+          if (res.ok) {
+            alert("✅ تمت إضافة الكتاب!");
+            previewContainer.style.display = 'none';
+            submitBtn.style.display = 'none';
+          } else {
+            alert("❌ فشل في الإضافة. تحقق من البيانات.");
+          }
+        }
+
+        catch (error) {
+          console.log("asa");
+
+        }
+      });
+    </script>
+
+    <script>
+      if (sessionStorage.getItem('modapp') !== 'true') {
+        window.location.href = '/admin/';
+      }
+    </script>
+</body>
+
+</html>
